@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.css'
+import styles from '../styles.css'
 
 export const Simpson = ({url, h, p}) => {
     return (
