@@ -8,9 +8,7 @@ import {Simpson} from "../Simpson/simpson";
         {url:'https://upload.wikimedia.org/wikipedia/en/e/ec/Lisa_Simpson.png',name:'Lisa',info:'Lisa Marie Simpson (born May 9, 1983) is the elder daughter and middle child of the Simpson family and one of the two tritagonists (along with Marge,) of The Simpsons series.'},
         {url:'https://upload.wikimedia.org/wikipedia/en/9/9d/Maggie_Simpson.png',name:'Maggie',info:'Margaret Evelyn Lenny "Maggie" Simpson (born January 14, 1988) is the 1-year-old daughter and youngest child of Marge and Homer Simpson.'}]
 
-     for (const arrayElement of array) {
-         
-     }
+
     return (
         <div>
             {
