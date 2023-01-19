@@ -1,10 +1,13 @@
-import React from 'react';
-
-export const User = ({name,id}) => {
+const User = ({user,setUserDetails}) => {
+    const {id, name} = user;
     return (
         <div>
-          <h3>{id}</h3>)<h3>{name}</h3><button>PICK USER</button>
+            <div>id: {id}</div>
+            <div>name: {name}</div>
+            <button onClick={()=>setUserDetails(user)}>PICK USER</button>
         </div>
     );
 };
+
+export {User};
 
