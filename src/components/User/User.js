@@ -1,10 +1,11 @@
-const User = ({user,setUserDetails}) => {
+const User = ({user,setUserIdForPosts}) => {
     const {id, name} = user;
+
     return (
         <div>
             <div>id: {id}</div>
             <div>name: {name}</div>
-            <button onClick={()=>setUserDetails(user)}>PICK USER</button>
+            <button onClick={()=>setUserIdForPosts(user.id)}>CHECK POSTS</button>
         </div>
     );
 };

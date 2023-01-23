@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
+
 import {userService} from "../../services";
 import {User} from "../User/User";
-import {UserDetails} from "../UserDetails/UserDetails";
 
-export const Users = () => {
+export const Users = ({setUser,setUserIdForPosts}) => {
 
     const [users, setUsers] = useState([]);
-    const [userDetails, setUserDetails] = useState(null);
 
     useEffect(() => {
         userService.getAll().then(value => value.data).then(value => setUsers([...value]))
@@ -15,14 +14,12 @@ export const Users = () => {
 
     return (
         <div>
-            <h1>User:</h1>
-            {userDetails && <UserDetails user={userDetails}/>}
 
-            <hr/>
 
             {
-                users.map(user => <User key={user.id} user={user} setUserDetails={setUserDetails}/>)
+                users.map(user => <User key={user.id} user={user} setUser={setUser} setUserIdForPosts={setUserIdForPosts}/>)
             }
+
         </div>
     );
 };
