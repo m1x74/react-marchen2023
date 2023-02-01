@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {useForm} from "react-hook-form";
+import {joiResolver} from "@hookform/resolvers/joi";
 
 import {styles} from '../style.css'
 import {carService} from "../../services";
-import {joiResolver} from "@hookform/resolvers/joi";
 import {carValidator} from "../../validators";
 
 export const CarForm = ({setNewCar,carForUpdate,setCarForUpdate,setUpdateCar}) => {
