@@ -1,0 +1,22 @@
+.Header a{
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-family: Candara, serif;
+    font-size: 25px;
+}
+.Header a:hover{
+    color: #BEB69B;
+    font-weight: normal;
+
+
+}
+.Header{
+    display: flex;
+    column-gap: 100px;
+    width: 100%;
+    height: 60px;
+    background:#24292F;
+    align-items: center;
+    justify-content: center;
+}
