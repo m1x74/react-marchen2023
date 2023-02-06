@@ -1,0 +1,7 @@
+
+.post{
+    border: solid black 1px;
+    height: max-content;
+    position: sticky;
+    top: 0;
+}

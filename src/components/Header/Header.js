@@ -9,7 +9,6 @@ const Header = () => {
             <NavLink to={"todos"}>Todos</NavLink>
             <NavLink to={"comments"}>Comments</NavLink>
             <NavLink to={"albums"}>Albums</NavLink>
-            <NavLink to={"post"}>Post</NavLink>
         </div>
     );
 };

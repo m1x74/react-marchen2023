@@ -1,0 +1,15 @@
+
+.comments {
+    margin-left: 150px;
+    display: flex;
+}
+.comments button{
+    height:25px;
+    cursor: pointer;
+    background: grey;
+    border: none;
+}
+.comments button:hover{
+    background: #b9b9b9;
+    border: solid 1px black;
+}
