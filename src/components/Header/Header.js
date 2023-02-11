@@ -1,11 +1,18 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import css from './header.module.css'
 import {useAuthContext} from "../../hooks/useAuthContext";
 
 const Header = () => {
-    const {user} = useAuthContext()
+    const {user} = useAuthContext();
     const{logOut}=useAuthContext();
+    const navigate =useNavigate();
+
+
+    const login =()=>{
+        logOut();
+        navigate('/');
+    }
 
     return (
         <div className={css.Header}>
@@ -16,7 +23,7 @@ const Header = () => {
             {user &&
                 <div>
                     {user}
-                    <button onClick={()=>logOut()}>LogOut</button>
+                    <button onClick={()=>login()}>LogOut</button>
                 </div>}
         </div>
     );
