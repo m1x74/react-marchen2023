@@ -1,11 +1,15 @@
-import './App.css';
+import {Comments, Posts} from "./components";
 
-const App =()=> {
-  return (
-    <div className="App">
+const App = () => {
+    return (
+        <div>
+            <Posts/>
+            <hr/>
+            <Comments/>
+        </div>
 
-    </div>
-  );
+)
+
 }
 
 export default App;
